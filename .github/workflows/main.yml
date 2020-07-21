@@ -1,6 +1,14 @@
 name: MAIN_DEPLOY
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'lib/*'
+      - 'router/*'
+      - 'utils/*'
+      - 'views/*'
 
 jobs:
   build:
